@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: vengatesh27/backend:v1
+        image: qa-test-backend:latest
         ports:
         - containerPort: 3000
 ---
