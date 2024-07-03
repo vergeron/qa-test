@@ -23,3 +23,30 @@ Deploy the services to a local Kubernetes cluster (e.g., Minikube or Kind).
 - README file with setup and execution instructions.
 
 **Github repo should be Public**
+
+
+ Setup Instructions
+
+1. Set Up Minikube
+   - Install Minikube
+   - Start Minikube:
+     
+    
+
+2. Deploy Services and Verify
+   - Clone the repository:
+     git clone https://github.com/username/qa-test
+     cd qa-test/kubernetes
+   - Deploy backend and frontend services:
+     kubectl apply -f backend-deployment.yaml
+     kubectl apply -f frontend-deployment.yaml
+
+     get the minikube ip using  minikube "service frontend-service --url" and launch in browser : result would be 'Hello from the     Backend!'
+
+## Testing Instructions
+- Create the automated test Script to verify the results using the same minikube ip as  frontend url
+- Run the automated test script to verify integration:
+  python backendmessage.py
+
+
+
